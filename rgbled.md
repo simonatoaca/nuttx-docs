@@ -32,6 +32,7 @@
 
 ### The registration of the RGB driver
 - The logic of the ```esp32_rgbled_initialize``` is found inside ```esp32/common/src/esp32_rgbled.c```, because it is common for all esp32 boards and this way code duplication is avoided.
+- To be able to use ```esp32_rgbled_initialize``` we also need to declare it inside a header file (```esp32/common/include/esp32_rgbled.h```), which will then be included in ```esp32_bringup.c```.
 - For it to be added at build time, the ```Make.defs``` file also needs a little modification:
     ```
     ifeq ($(CONFIG_RGBLED),y)
