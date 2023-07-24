@@ -91,3 +91,12 @@
      CONFIG_ESP32_LEDC_CHANNEL2_PIN=15 - for the blue led
   - Lastly, the **frequency of the PWM channels**:  
     CONFIG_RGBLED_PWM_FREQ=200
+
+### Testing the LED
+  - Initially, the led should be OFF.
+  - Entering these commands should make it red, green and then blue:
+    ```
+    nsh> printf "#ff0000" > /dev/rgbled0
+    nsh> printf "#00ff00" > /dev/rgbled0
+    nsh> printf "#0000ff" > /dev/rgbled0
+    ```
