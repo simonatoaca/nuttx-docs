@@ -2,7 +2,7 @@
 
 ### The basic working principle of RGB LEDs
 - An RGB LED is composed of 3 different LEDs, a red, green and blue one, each being controlled independently.
-![image](RGB-LED-Pinout.png)
+![image](images/RGB-LED-Pinout.png)
 
 - A common way of controlling the LEDs is through a **[PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) channel**.
 - An RGB color is represented as a group of 3 numbers, ranging from 0 to 255. In our case, 0 corresponds to a 0% duty cycle, while 255 corresponds to a 100% duty cycle. In other words, at 255 the led is at its full power.
